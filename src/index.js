@@ -1,12 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Home from "./pages/Home/Home"
+import Home from "./pages/Home/Home";
+import Press from "./pages/Press/Press"
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    errorElement: <div>Opps, Pages not found!</div>,
+  },
+  {
+    path: "/press",
+    element: <Press />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
