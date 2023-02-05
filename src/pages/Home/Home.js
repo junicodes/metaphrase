@@ -28,7 +28,7 @@ function Home() {
         </div>
         <Wallpaper />
       </div>
-      <div className='w-full h-96 border'>
+      <div className='w-full h-96'>
         Net screen One
       </div>
       <div className='w-full h-96 border'>
