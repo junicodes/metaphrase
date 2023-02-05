@@ -7,7 +7,7 @@ const Header = ({ scrollPosition }) => {
   
   const isScrolled = (scrollPosition > 50)
   return (
-    <header className="headers-wrapper h-20 w-full flex justify-between items-center container-fluid px-4 md:px-20 2xl:px-0 2xl:container mx-auto">
+    <header className="headers-wrapper h-20 w-full flex justify-between items-center container-fluid px-4 md:px-14 2xl:px-0 2xl:container mx-auto">
       <img src={logoDark} className={`w-30 h-8 ${isScrolled ? "pl-20" : "pl-0"}`} alt="logo" />
       <ul className="flex pr-10">
         <li className="mr-8 nav-list">
