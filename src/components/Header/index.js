@@ -8,11 +8,11 @@ const Header = ({ scrollPosition }) => {
   const isScrolled = (scrollPosition > 50)
   return (
     <header className="headers-wrapper h-20 w-full flex justify-between items-center container-fluid px-4 md:px-20 2xl:px-0 2xl:container mx-auto">
-      <img src={isScrolled ? logoDark : logoWhite} className="w-30 h-8" alt="logo" />
-      <ul className="flex">
+      <img src={logoDark} className={`w-30 h-8 ${isScrolled ? "pl-20" : "pl-0"}`} alt="logo" />
+      <ul className="flex pr-10">
         <li className="mr-8 nav-list">
           <a
-            className={`${isScrolled ? "text-black hover:text-black" : "text-white hover:text-[#e81d78]"} font-medium cursor-pointer text-[14px] uppercase hover:underline decoration-4 underline-offset-8`}
+            className={`${isScrolled ? "text-black hover:text-[#e81d78]" : "text-white hover:text-white"} font-medium cursor-pointer text-[14px] uppercase hover:underline decoration-4 underline-offset-4`}
             href="/learn"
           >
             Learn
@@ -20,7 +20,7 @@ const Header = ({ scrollPosition }) => {
         </li>
         <li className="mr-8 nav-list">
           <a
-            className={`${isScrolled ? "text-black hover:text-black" : "text-white hover:text-[#e81d78]"} font-medium cursor-pointer text-[14px] uppercase hover:underline decoration-4 underline-offset-8`}
+            className={`${isScrolled ? "text-black hover:text-[#e81d78]" : "text-white hover:text-white"} font-medium cursor-pointer text-[14px] uppercase hover:underline decoration-4 underline-offset-4`}
             href="/press"
           >
             Press
@@ -28,7 +28,7 @@ const Header = ({ scrollPosition }) => {
         </li>
         <li className="mr-8 nav-list">
           <a
-            className={`${isScrolled ? "text-black hover:text-black" : "text-white hover:text-[#e81d78]"} font-medium cursor-pointer text-[14px] uppercase hover:underline decoration-4 underline-offset-8`}
+            className={`${isScrolled ? "text-black hover:text-[#e81d78]" : "text-white hover:text-white"} font-medium cursor-pointer text-[14px] uppercase hover:underline decoration-4 underline-offset-4`}
             href="/jobs"
           >
             Jobs
@@ -36,7 +36,7 @@ const Header = ({ scrollPosition }) => {
         </li>
         <li className="mr-8 nav-list">
           <a
-            className={`${isScrolled ? "text-black hover:text-black" : "text-white hover:text-[#e81d78]"} font-medium cursor-pointer text-[14px] uppercase hover:underline decoration-4 underline-offset-8`}
+            className={`${isScrolled ? "text-black hover:text-[#e81d78]" : "text-white hover:text-white"} font-medium cursor-pointer text-[14px] uppercase hover:underline decoration-4 underline-offset-4`}
             href="/contacts"
           >
             Contact
