@@ -30,20 +30,26 @@ const Wallpaper = () => {
           <img style={{
           }} src={WallpaperImage} className="w-full h-full" alt="Wallpaper images" />
         </div>
-        <video 
+        <div style={{
+          width: "100%",
+          height: "100vh",
+          marginLeft: "50px"
+        }}>
+          <video 
             ref={videoRef} 
             style={{
-              width: "200vw",
-              height: "100vh",
+              width: "100%",
+              height: "100%",
               outline: "0px"
             }} 
             loop
             autoPlay
             muted
-        >
+          >
             <source src={wallPaperVideo} type="video/mp4" />
             Your browser does not support the video tag.
-        </video>
+          </video>
+        </div>
         <div className='absolute w-full bottom-20 px-14 animate__animated animate__fadeIn'>
           <h2 className='text-left text-6xl font-bold'
           >A Web3 consultancy</h2>
