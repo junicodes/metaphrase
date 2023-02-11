@@ -2,6 +2,7 @@ import './Home.css';
 import Header from "../../components/Header"
 import Wallpaper from '../../components/Wallpaper';
 import { useState, useEffect } from "react";
+import WallpaperTwo from '../../components/WallpaperTwo';
 
 function Home() {
 
@@ -22,15 +23,11 @@ function Home() {
 
   return (
     <div className="App" onScroll={handleScroll}>
-      <div>
-        <div className={`${(scrollPosition > 50) ? "fixed bg-white py-0 animate__animated animate__fadeIn" : "absolute py-3"} w-full z-50`}>
-         <Header scrollPosition={scrollPosition} />
-        </div>
-        <Wallpaper />
+      <div className={`${(scrollPosition > 50) ? "fixed bg-white py-0 animate__animated animate__fadeIn" : "absolute py-3"} w-full z-50`}>
+        <Header scrollPosition={scrollPosition} />
       </div>
-      <div className='w-full h-96'>
-        Net screen One
-      </div>
+      <Wallpaper />
+      <WallpaperTwo />
       <div className='w-full h-96 border'>
         Net screen Two
       </div>

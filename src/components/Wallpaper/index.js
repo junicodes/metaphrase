@@ -27,8 +27,10 @@ const Wallpaper = () => {
           height: "100vh",
           overflow: "hidden"
         }}>
-          <img style={{
-          }} src={WallpaperImage} className="w-full h-full" alt="Wallpaper images" />
+          <img 
+            src={WallpaperImage} 
+            className="w-full h-full" alt="Wallpaper images" 
+          />
         </div>
         <div style={{
           width: "100%",
