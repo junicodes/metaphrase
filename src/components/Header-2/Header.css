@@ -1,0 +1,8 @@
+
+.nav-list {
+    transition: all 1s ease-out;
+}
+
+.nav-list:hover {
+    transition: all 1s ease-in;  
+}
